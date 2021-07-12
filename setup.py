@@ -2,13 +2,12 @@ import setuptools
 
 setuptools.setup(
     name="dconf",
-    version="0.0.1",
+    version="0.0.3",
     author="Anankke W",
     author_email="anankke@pm.me",
     description="Easy dot representation configuration module.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    packages=setuptools.find_packages(where="src"),
     license="LICENSE",
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -21,5 +20,6 @@ setuptools.setup(
     },
     python_requires=">=3.6",
     package_dir={"": "src"},
+    py_modules=["dconf"],
     install_requires=[],
 )
